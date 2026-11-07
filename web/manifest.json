@@ -1,0 +1,10 @@
+{
+  "name": "올랜도 킴 벤치마킹 미국주식 아카데미 (Antigravity)",
+  "short_name": "주식공부AGY",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b0f19",
+  "theme_color": "#6366f1",
+  "description": "올랜도 킴(@orlandocampus) 2026 영상 벤치마킹 기반 기본적 분석(대차대조표) × 기술적 분석(차트) 일일 자동 학습 및 레벨 진단 웹앱"
+}
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0b0f19" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="주식공부AGY" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='40' fill='%231e1b4b'/><path d='M35 125 L70 85 L100 105 L145 50' stroke='%2338bdf8' stroke-width='14' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='145' cy='50' r='10' fill='%2310b981'/></svg>" />
+  <title>나만의 미국주식 학습플랜 | 올랜도 킴 벤치마킹 (Antigravity)</title>
+  <link rel="manifest" href="manifest.json" />
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <!-- 상단 고정 레벨 진단 & 성장 상태 바 -->
+    <header class="top-header">
+      <div class="header-row">
+        <div class="brand-group">
+          <span class="app-tag">ANTIGRAVITY × @orlandocampus</span>
+          <h1 class="app-title">나만의 미국주식 학습플랜</h1>
+        </div>
+        <div class="streak-pill" id="streak-pill" title="연속 학습일">
+          🔥 <span id="streak-count">1</span>일째
+        </div>
+      </div>
+
+      <!-- 나의 성장 레벨 & XP 프로그레스 카드 -->
+      <div class="level-banner" id="level-banner-card">
+        <div class="level-top">
+          <div>
+            <span class="level-badge" id="user-level-badge">🌱 Lv.1 주린이 입문자</span>
+            <p class="level-diagnosis-text" id="user-level-summary">진단 데이터를 불러오는 중...</p>
+          </div>
+          <div class="xp-box">
+            <div class="xp-num"><span id="user-xp">0</span> XP</div>
+            <div class="xp-next" id="user-xp-next">다음 레벨까지 200 XP</div>
+          </div>
+        </div>
+        <div class="xp-bar-bg">
+          <div class="xp-bar-fill" id="xp-bar-fill" style="width: 12%;"></div>
+        </div>
+        <div class="level-bottom">
+          <span id="ai-coach-short">💡 AI 코치: 초기 진단 또는 오늘의 영상 퀴즈로 첫 경험치를 획득해보세요!</span>
+          <button class="btn-mini-diag" id="btn-go-diagnosis">성장 리포트 ›</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 메인 뷰 컨테이너 -->
+    <main class="main-content">
+      <!-- 탭 1: 오늘의 공부 (Daily Smart Study + 구독자 요청 이벤트 + 내 종목) -->
+      <section class="tab-view active" id="tab-daily">
+        <div id="remind-alert-box"></div>
+        <div id="daily-study-container"></div>
+      </section>
+
+      <!-- 탭 2: 6단원 커리큘럼 (기본적 대차대조표 × 기술적 차트 균형 학습 & 단원 테스트) -->
+      <section class="tab-view" id="tab-curriculum">
+        <div class="section-intro-card">
+          <h2>📚 기본적 × 기술적 5:5 균형 6단원 커리큘럼</h2>
+          <p>초보자부터 시작해 대차대조표·손익계산서와 이동평균선·매물대 차트를 올랜도 킴의 2026년 실제 영상 사례로 마스터합니다. 단원 학습 후 <strong>단원 테스트(5문항)</strong>를 통과하면 레벨이 상승합니다!</p>
+        </div>
+        <div class="unit-selector- pills" id="unit-pills"></div>
+        <div id="unit-detail-container"></div>
+      </section>
+
+      <!-- 탭 3: 실전 기업 분석 랩 & 구독자 요청 종목 이벤트 -->
+      <section class="tab-view" id="tab-lab">
+        <div class="section-intro-card">
+          <h2>📊 실전 대차대조표 × 차트 랩 & 🎁 구독자 요청 종목</h2>
+          <p>올랜도 킴 빈출 종목, <strong>내 보유 종목(TSLA·IONQ·HOOD·JOBY·SATL)</strong>, 그리고 영상 속 <strong>구독자 요청 이벤트 종목(PLTR·ORCL·GE)</strong>의 재무상태표(대차대조표)와 실시간 차트 지지·저항선을 동시에 비교합니다.</p>
+        </div>
+        <div class="filter-bar" id="stock-group-filter">
+          <button class="filter-btn active" data-filter="all">전체 종목</button>
+          <button class="filter-btn" data-filter="my">💼 내 보유종목</button>
+          <button class="filter-btn" data-filter="sub">🎁 구독자 요청 이벤트</button>
+          <button class="filter-btn" data-filter="orlando">🎯 올랜도킴 코어</button>
+        </div>
+        <div class="ticker-chips" id="ticker-chips"></div>
+        <div id="stock-lab-detail"></div>
+      </section>
+
+      <!-- 탭 4: 레벨 진단 & 오답 리마인드 복습 노트 -->
+      <section class="tab-view" id="tab-remind">
+        <div id="diagnosis-and-remind-container"></div>
+      </section>
+
+      <!-- 탭 5: 2026 올랜도 킴 영상 분석 아카이브 -->
+      <section class="tab-view" id="tab-archive">
+        <div class="section-intro-card">
+          <h2>🎬 2026 올랜도 킴(@orlandocampus) 분석 아카이브</h2>
+          <p>2026년에 업로드된 주요 영상들의 5단계 분석 틀(매크로 → 스마트머니 → 재무 → 차트 → 대응)과 내 학습 완료 현황입니다. 새 영상이 없는 날에는 미학습 영상이 자동으로 '오늘의 공부'에 배정됩니다.</p>
+        </div>
+        <div id="archive-list-container"></div>
+      </section>
+    </main>
+
+    <!-- 하단 모바일 고정 탭 네비게이션 (휴대폰 엄지손가락 최적화) -->
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-tab="tab-daily">
+        <span class="nav-icon">🔥</span>
+        <span class="nav-label">오늘의공부</span>
+      </button>
+      <button class="nav-item" data-tab="tab-curriculum">
+        <span class="nav-icon">📚</span>
+        <span class="nav-label">6단원학습</span>
+      </button>
+      <button class="nav-item" data-tab="tab-lab">
+        <span class="nav-icon">📊</span>
+        <span class="nav-label">종목·이벤트랩</span>
+      </button>
+      <button class="nav-item" data-tab="tab-remind">
+        <span class="nav-icon">🧠</span>
+        <span class="nav-label">진단·리마인드</span>
+        <span class="nav-badge" id="remind-count-badge" style="display:none;">0</span>
+      </button>
+      <button class="nav-item" data-tab="tab-archive">
+        <span class="nav-icon">🎬</span>
+        <span class="nav-label">26년영상</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- 토스트 알림창 -->
+  <div id="toast-notification" class="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+

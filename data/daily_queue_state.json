@@ -1,0 +1,19 @@
+{
+  "last_date": "2026-11-07",
+  "completed_video_ids": [
+    "THEMlFZF4Ss"
+  ],
+  "sub_event_idx": 1,
+  "my_stock_idx": 1,
+  "history": [
+    {
+      "study_date": "2026-11-07",
+      "video_id": "THEMlFZF4Ss",
+      "video_title": "유가 폭등이 시장전반의 심리를 불안하게 만든다",
+      "video_date": "2026-10-24",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "PLTR",
+      "my_stock_ticker": "TSLA"
+    }
+  ]
+}

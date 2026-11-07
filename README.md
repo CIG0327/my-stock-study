@@ -1,0 +1,2 @@
+# my-stock-study
+DailyStudyStock

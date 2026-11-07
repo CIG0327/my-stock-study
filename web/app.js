@@ -299,7 +299,13 @@
 
     const container = document.getElementById("daily-study-container");
     container.innerHTML = `
-      <div class="mode-banner">${tb.mode_badge}</div>
+      <div class="mode-banner" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span>${tb.mode_badge}</span>
+        <div style="display:flex; gap:6px;">
+          <button class="btn-mini-diag" id="btn-next-video-lesson" title="다른 미학습 영상으로 오늘의 공부 변경">⏭️ 다음 영상 공부하기</button>
+          <button class="btn-mini-diag" id="btn-reset-quiz-state" title="이미 푼 체크 표시를 지우고 다시 풀기">🔄 퀴즈 기록 초기화</button>
+        </div>
+      </div>
 
       <!-- 1. 오늘의 올랜도 킴 메인 영상 5단계 벤치마킹 카드 -->
       <div class="card">
@@ -428,6 +434,39 @@
           addXpAndSkill(40, "macro", "🎬 오늘의 영상 5단계 프레임워크 학습 완료!");
           renderDailyTab();
         }
+      };
+    }
+
+    const btnNextVideo = document.getElementById("btn-next-video-lesson");
+    if (btnNextVideo) {
+      btnNextVideo.onclick = () => {
+        const allVids = DATA.videos_2026 || [];
+        const currIdx = allVids.findIndex((x) => x.video_id === v.video_id);
+        const nextVid = allVids[(currIdx + 1) % allVids.length];
+        if (nextVid) {
+          DATA.today_briefing.video = nextVid;
+          DATA.today_briefing.mode_badge = `🟢 [연속 학습 모드] ${nextVid.published_at} 영상 (${(currIdx + 2)}/${allVids.length}번째)`;
+          const matchedU =
+            DATA.curriculum.units.find((u) => u.unit_id === nextVid.related_unit) ||
+            DATA.curriculum.units[0];
+          DATA.today_briefing.unit_summary = {
+            unit_id: matchedU.unit_id,
+            title: matchedU.title,
+            subtitle: matchedU.subtitle
+          };
+          showToast(`⏭️ 다음 영상 『${nextVid.title}』 및 새 퀴즈를 불러왔습니다!`);
+          renderDailyTab();
+        }
+      };
+    }
+
+    const btnResetQuiz = document.getElementById("btn-reset-quiz-state");
+    if (btnResetQuiz) {
+      btnResetQuiz.onclick = () => {
+        state.answeredQuizzes = {};
+        saveState();
+        showToast("🔄 모든 퀴즈의 정답 체크 표시가 초기화되었습니다! 처음부터 다시 풀어보세요.");
+        renderDailyTab();
       };
     }
 

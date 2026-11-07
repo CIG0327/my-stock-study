@@ -1,5 +1,5 @@
 window.STUDY_APP_DATA = {
-  "generated_at": "2026-11-07 23:33",
+  "generated_at": "2026-11-07 23:47",
   "level_system": [
     {
       "level": 1,

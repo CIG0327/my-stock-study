@@ -1,11 +1,21 @@
 {
-  "last_date": "2026-11-07",
+  "last_date": "2026-11-08",
   "completed_video_ids": [
-    "THEMlFZF4Ss"
+    "THEMlFZF4Ss",
+    "evuL4Y85Tjg"
   ],
-  "sub_event_idx": 1,
-  "my_stock_idx": 1,
+  "sub_event_idx": 2,
+  "my_stock_idx": 2,
   "history": [
+    {
+      "study_date": "2026-11-08",
+      "video_id": "evuL4Y85Tjg",
+      "video_title": "(주간시황) 개인투매 다 왔나? vs 기관자금 유입?",
+      "video_date": "2026-11-07",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "ORCL",
+      "my_stock_ticker": "IONQ"
+    },
     {
       "study_date": "2026-11-07",
       "video_id": "THEMlFZF4Ss",

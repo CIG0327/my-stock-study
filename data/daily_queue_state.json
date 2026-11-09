@@ -1,12 +1,22 @@
 {
-  "last_date": "2026-11-08",
+  "last_date": "2026-11-09",
   "completed_video_ids": [
     "THEMlFZF4Ss",
-    "evuL4Y85Tjg"
+    "evuL4Y85Tjg",
+    "EN7IlomIaDw"
   ],
-  "sub_event_idx": 2,
-  "my_stock_idx": 2,
+  "sub_event_idx": 3,
+  "my_stock_idx": 3,
   "history": [
+    {
+      "study_date": "2026-11-09",
+      "video_id": "EN7IlomIaDw",
+      "video_title": "(아이온큐) 수주잔고가 계속 늘어난다!!!",
+      "video_date": "2026-11-06",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "GE",
+      "my_stock_ticker": "HOOD"
+    },
     {
       "study_date": "2026-11-08",
       "video_id": "evuL4Y85Tjg",

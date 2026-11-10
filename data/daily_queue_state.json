@@ -1,13 +1,23 @@
 {
-  "last_date": "2026-11-09",
+  "last_date": "2026-11-10",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
-    "EN7IlomIaDw"
+    "EN7IlomIaDw",
+    "G-t-iTnRv1Y"
   ],
-  "sub_event_idx": 3,
-  "my_stock_idx": 3,
+  "sub_event_idx": 4,
+  "my_stock_idx": 4,
   "history": [
+    {
+      "study_date": "2026-11-10",
+      "video_id": "G-t-iTnRv1Y",
+      "video_title": "(시황분석) 아직은 눈치보며 실매수세는 안들어왔다!!!",
+      "video_date": "2026-11-06",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "MU",
+      "my_stock_ticker": "JOBY"
+    },
     {
       "study_date": "2026-11-09",
       "video_id": "EN7IlomIaDw",

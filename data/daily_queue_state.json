@@ -1,14 +1,24 @@
 {
-  "last_date": "2026-11-10",
+  "last_date": "2026-11-11",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
     "EN7IlomIaDw",
-    "G-t-iTnRv1Y"
+    "G-t-iTnRv1Y",
+    "K1gTcOa21Y0"
   ],
-  "sub_event_idx": 4,
-  "my_stock_idx": 4,
+  "sub_event_idx": 1,
+  "my_stock_idx": 5,
   "history": [
+    {
+      "study_date": "2026-11-11",
+      "video_id": "K1gTcOa21Y0",
+      "video_title": "(아이온큐) 그래도 쫒아가서 담지는 말자!!!",
+      "video_date": "2026-11-10",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "PLTR",
+      "my_stock_ticker": "SATL"
+    },
     {
       "study_date": "2026-11-10",
       "video_id": "G-t-iTnRv1Y",

@@ -1,15 +1,25 @@
 {
-  "last_date": "2026-11-11",
+  "last_date": "2026-11-12",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
     "EN7IlomIaDw",
     "G-t-iTnRv1Y",
-    "K1gTcOa21Y0"
+    "K1gTcOa21Y0",
+    "zQLv6ccHQNk"
   ],
-  "sub_event_idx": 1,
-  "my_stock_idx": 5,
+  "sub_event_idx": 2,
+  "my_stock_idx": 1,
   "history": [
+    {
+      "study_date": "2026-11-12",
+      "video_id": "zQLv6ccHQNk",
+      "video_title": "(시황분석) 엔비디아 지금이 바닥인가?",
+      "video_date": "2026-11-10",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "ORCL",
+      "my_stock_ticker": "TSLA"
+    },
     {
       "study_date": "2026-11-11",
       "video_id": "K1gTcOa21Y0",

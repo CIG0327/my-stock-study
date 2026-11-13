@@ -1,16 +1,26 @@
 {
-  "last_date": "2026-11-12",
+  "last_date": "2026-11-13",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
     "EN7IlomIaDw",
     "G-t-iTnRv1Y",
     "K1gTcOa21Y0",
-    "zQLv6ccHQNk"
+    "zQLv6ccHQNk",
+    "Pr4xGiQAkR4"
   ],
-  "sub_event_idx": 2,
-  "my_stock_idx": 1,
+  "sub_event_idx": 3,
+  "my_stock_idx": 2,
   "history": [
+    {
+      "study_date": "2026-11-13",
+      "video_id": "Pr4xGiQAkR4",
+      "video_title": "(시황분석) V자 반등 보다는 U자 반등 가능한 이유는?",
+      "video_date": "2026-11-09",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "GE",
+      "my_stock_ticker": "IONQ"
+    },
     {
       "study_date": "2026-11-12",
       "video_id": "zQLv6ccHQNk",

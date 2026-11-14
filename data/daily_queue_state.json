@@ -1,5 +1,5 @@
 {
-  "last_date": "2026-11-13",
+  "last_date": "2026-11-14",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
@@ -7,11 +7,21 @@
     "G-t-iTnRv1Y",
     "K1gTcOa21Y0",
     "zQLv6ccHQNk",
-    "Pr4xGiQAkR4"
+    "Pr4xGiQAkR4",
+    "IlbyWmWLGnw"
   ],
-  "sub_event_idx": 3,
-  "my_stock_idx": 2,
+  "sub_event_idx": 4,
+  "my_stock_idx": 3,
   "history": [
+    {
+      "study_date": "2026-11-14",
+      "video_id": "IlbyWmWLGnw",
+      "video_title": "(시황분석) 기술적 반등 VS 추세전환",
+      "video_date": "2026-11-09",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "MU",
+      "my_stock_ticker": "HOOD"
+    },
     {
       "study_date": "2026-11-13",
       "video_id": "Pr4xGiQAkR4",

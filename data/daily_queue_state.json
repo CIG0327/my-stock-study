@@ -1,5 +1,5 @@
 {
-  "last_date": "2026-11-14",
+  "last_date": "2026-11-15",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
@@ -8,11 +8,21 @@
     "K1gTcOa21Y0",
     "zQLv6ccHQNk",
     "Pr4xGiQAkR4",
-    "IlbyWmWLGnw"
+    "IlbyWmWLGnw",
+    "VpVt3lIffSw"
   ],
-  "sub_event_idx": 4,
-  "my_stock_idx": 3,
+  "sub_event_idx": 1,
+  "my_stock_idx": 4,
   "history": [
+    {
+      "study_date": "2026-11-15",
+      "video_id": "VpVt3lIffSw",
+      "video_title": "(관심종목) 추천종목을 선별해서 매매하는 방법은?",
+      "video_date": "2026-11-08",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "PLTR",
+      "my_stock_ticker": "JOBY"
+    },
     {
       "study_date": "2026-11-14",
       "video_id": "IlbyWmWLGnw",

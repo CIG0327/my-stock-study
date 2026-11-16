@@ -1,5 +1,5 @@
 {
-  "last_date": "2026-11-15",
+  "last_date": "2026-11-16",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
@@ -9,11 +9,21 @@
     "zQLv6ccHQNk",
     "Pr4xGiQAkR4",
     "IlbyWmWLGnw",
-    "VpVt3lIffSw"
+    "VpVt3lIffSw",
+    "KBDlLw-XoCU"
   ],
-  "sub_event_idx": 1,
-  "my_stock_idx": 4,
+  "sub_event_idx": 2,
+  "my_stock_idx": 5,
   "history": [
+    {
+      "study_date": "2026-11-16",
+      "video_id": "KBDlLw-XoCU",
+      "video_title": "(엔비디아) 월요일 젠슨황 스캔들로 주가 폭락시 매수관점!!!",
+      "video_date": "2026-11-08",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "ORCL",
+      "my_stock_ticker": "SATL"
+    },
     {
       "study_date": "2026-11-15",
       "video_id": "VpVt3lIffSw",

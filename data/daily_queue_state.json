@@ -1,5 +1,5 @@
 {
-  "last_date": "2026-11-16",
+  "last_date": "2026-11-17",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
@@ -10,11 +10,21 @@
     "Pr4xGiQAkR4",
     "IlbyWmWLGnw",
     "VpVt3lIffSw",
-    "KBDlLw-XoCU"
+    "KBDlLw-XoCU",
+    "D0oYzLQaR1c"
   ],
-  "sub_event_idx": 2,
-  "my_stock_idx": 5,
+  "sub_event_idx": 3,
+  "my_stock_idx": 1,
   "history": [
+    {
+      "study_date": "2026-11-17",
+      "video_id": "D0oYzLQaR1c",
+      "video_title": "(엔비디아,앤트로픽) 젠슨황 돌아오면 폭등? 엔트로픽의 물량폭탄으로 하락?",
+      "video_date": "2026-11-16",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "GE",
+      "my_stock_ticker": "TSLA"
+    },
     {
       "study_date": "2026-11-16",
       "video_id": "KBDlLw-XoCU",

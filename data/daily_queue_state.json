@@ -1,5 +1,5 @@
 {
-  "last_date": "2026-11-17",
+  "last_date": "2026-11-18",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
@@ -11,11 +11,21 @@
     "IlbyWmWLGnw",
     "VpVt3lIffSw",
     "KBDlLw-XoCU",
-    "D0oYzLQaR1c"
+    "D0oYzLQaR1c",
+    "2mSKquutBhs"
   ],
-  "sub_event_idx": 3,
-  "my_stock_idx": 1,
+  "sub_event_idx": 4,
+  "my_stock_idx": 2,
   "history": [
+    {
+      "study_date": "2026-11-18",
+      "video_id": "2mSKquutBhs",
+      "video_title": "(13F 공시) 선수들의 매매 내역은?",
+      "video_date": "2026-11-17",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "MU",
+      "my_stock_ticker": "IONQ"
+    },
     {
       "study_date": "2026-11-17",
       "video_id": "D0oYzLQaR1c",

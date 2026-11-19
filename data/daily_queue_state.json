@@ -1,5 +1,5 @@
 {
-  "last_date": "2026-11-18",
+  "last_date": "2026-11-19",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
@@ -12,11 +12,21 @@
     "VpVt3lIffSw",
     "KBDlLw-XoCU",
     "D0oYzLQaR1c",
-    "2mSKquutBhs"
+    "2mSKquutBhs",
+    "us-Avc9p4xQ"
   ],
-  "sub_event_idx": 4,
-  "my_stock_idx": 2,
+  "sub_event_idx": 1,
+  "my_stock_idx": 3,
   "history": [
+    {
+      "study_date": "2026-11-19",
+      "video_id": "us-Avc9p4xQ",
+      "video_title": "(엔비디아) 과연 언제 주가가 올라가나?",
+      "video_date": "2026-11-18",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "PLTR",
+      "my_stock_ticker": "HOOD"
+    },
     {
       "study_date": "2026-11-18",
       "video_id": "2mSKquutBhs",

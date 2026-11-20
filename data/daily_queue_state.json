@@ -1,5 +1,5 @@
 {
-  "last_date": "2026-11-19",
+  "last_date": "2026-11-20",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
@@ -13,11 +13,21 @@
     "KBDlLw-XoCU",
     "D0oYzLQaR1c",
     "2mSKquutBhs",
-    "us-Avc9p4xQ"
+    "us-Avc9p4xQ",
+    "FDmzU5oZSUU"
   ],
-  "sub_event_idx": 1,
-  "my_stock_idx": 3,
+  "sub_event_idx": 2,
+  "my_stock_idx": 4,
   "history": [
+    {
+      "study_date": "2026-11-20",
+      "video_id": "FDmzU5oZSUU",
+      "video_title": "(아이온큐) 주가하락의 근본원인은?",
+      "video_date": "2026-11-19",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "ORCL",
+      "my_stock_ticker": "JOBY"
+    },
     {
       "study_date": "2026-11-19",
       "video_id": "us-Avc9p4xQ",

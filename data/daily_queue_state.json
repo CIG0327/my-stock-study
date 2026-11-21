@@ -1,5 +1,5 @@
 {
-  "last_date": "2026-11-20",
+  "last_date": "2026-11-21",
   "completed_video_ids": [
     "THEMlFZF4Ss",
     "evuL4Y85Tjg",
@@ -14,11 +14,21 @@
     "D0oYzLQaR1c",
     "2mSKquutBhs",
     "us-Avc9p4xQ",
-    "FDmzU5oZSUU"
+    "FDmzU5oZSUU",
+    "PWIz1YuLiRg"
   ],
-  "sub_event_idx": 2,
-  "my_stock_idx": 4,
+  "sub_event_idx": 3,
+  "my_stock_idx": 5,
   "history": [
+    {
+      "study_date": "2026-11-21",
+      "video_id": "PWIz1YuLiRg",
+      "video_title": "(시장전망) 과연 조정장 후의 상승 가능한가?",
+      "video_date": "2026-11-20",
+      "mode": "최근 미학습 영상 & 심화 커리큘럼 자동 진행",
+      "sub_event_ticker": "GE",
+      "my_stock_ticker": "SATL"
+    },
     {
       "study_date": "2026-11-20",
       "video_id": "FDmzU5oZSUU",
